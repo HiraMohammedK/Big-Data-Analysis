@@ -18,7 +18,7 @@ text_data = [
 # Define the Mapper function
 def mapper(text):
     word_count = defaultdict(int)
-    words = re.findall(r'\b\w+\b', text.lower())  # Use regex to find words and make them lowercase
+    words = re.findall(r'\b\w+\b', text.lower())  
     for word in words:
         word_count[word] += 1
     return word_count.items()
